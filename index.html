@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
+    <link href="./libs/glide/glide.core.min.css" rel="stylesheet"/>
+    <link href="libs/glide/glide.theme.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./style.css">
     <title>响应式网站</title>
 </head>
@@ -19,12 +21,12 @@
             <a href="#">团队介绍</a>
             <a href="#">公司动态</a>
             <i class="fas fa-search"></i>
-        </nav>
         <div class="burger">
             <div class="burger-line1"></div>
             <div class="burger-line2"></div>
             <div class="burger-line3"></div>
         </div>
+    </nav>
     </header>
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
@@ -34,18 +36,18 @@
                         <h1>用创意点缀人生，让科技融入理想</h1>
                         <h3>科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创意点缀人生，让科技融入理想</h3>
                         <button class="explore-btn">探索更多</button>
-                        <div class="backdrop"></div>
-                        <img src="./images/people-in-couch-1024248.jpg" alt="1">
                     </div>
+                    <div class="backdrop"></div>
+                    <img src="./images/people-in-couch-1024248.jpg" alt="1">
                 </div>
                 <div class="glide__slide">
-                    <div class="slide-caption">
+                    <div class="slide-caption left">
                         <h1>科技改变世界</h1>
                         <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed necessitatibus vel accusamus </h3>
                         <button class="explore-btn">探索更多</button>
+                    </div>
                         <div class="backdrop"></div>
                        <video src="./videos/working-man.mp4" autoplay loop muted></video>
-                    </div>
                 </div>
             </div>
         </div>
@@ -57,11 +59,12 @@
                 >
             </button>
         </div>
-        <div class="glide__bullets" data-glide-el="controls[nav">
+        <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"</button>
             <button class="glide__bullet" data-glide-dir="=1"</button>
         </div>
     </div>
+    <script src="./libs/glide/glide.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>

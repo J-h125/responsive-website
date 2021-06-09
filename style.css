@@ -73,6 +73,9 @@ header .burger{
     max-width: 80vw;
     text-align: left;
 }
+.slide-caption > * {
+    opacity: 0;
+}
 .glide__slide{
     display: flex;
     justify-content: center;

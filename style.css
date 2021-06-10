@@ -114,7 +114,10 @@ header .burger{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+/*关于我们*/
 section {
     display: grid;
     justify-items: center;
@@ -171,3 +174,56 @@ section {
     color: var(--text-color-dark-gray);
     margin-top: 8px;
 }
+
+/*成功案例*/
+.showcases {
+    max-width:unset;
+    padding:72px 0 0 0;
+}
+.filter-btns{
+    margin:54px 0 38px 0;
+}
+.filter-btn{
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark-gray);
+    margin: 0 8px;
+    border: 0;
+    padding:8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.filter-btn.active,.filter-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.showcases .cases {
+    width: 100vw;
+}
+.showcases .case-item {
+    width: 25vw;
+    height: 20vw;
+    overflow: hidden;
+}
+.case-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

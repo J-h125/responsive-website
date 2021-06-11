@@ -29,12 +29,12 @@ const isotope = new Isotope(".cases",{
 const filterBtns = document.querySelector(".filter-btns");
 
 filterBtns.addEventListener('click',(e)=>{
-    console.log('111')
-    const {target} = e;
-    const filterOption = target.getAttribute('data-filter')
+    // const {target} = e;
+    const filterOption = e.target.getAttribute('data-filter')
+    // console.log(filterOption)
     if(filterOption){
         document.querySelectorAll(".filter-btn.active").forEach(btn=>btn.classList.remove('active'));
-        target.classList.add('active')
+        e.target.classList.add('active')
         isotope.arrange({filter:filterOption})
     }
 })

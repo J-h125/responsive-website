@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: "Microsoft Yahei", Helvetica, sans-serif;
     font-size:14px;
+    list-style: none;
+    text-decoration: none;
 }
 
 img {
@@ -412,4 +414,56 @@ section {
 .activity:hover {
     transform: translateY(-20px) scale(1.1);
     box-shadow: 0 0 36px rgba(0,0,0,0.1);
+}
+/*底部信息*/
+footer {
+    margin-top: 40px;
+    background-color: #19181a;
+    color: white;
+    min-width: 100vw;
+    height:50vh;
+    display: grid;
+    justify-items: center;
+}
+.info {
+    width: 1180px;
+    display:grid;
+    grid-template-columns:3fr repeat(4,1fr);
+    margin-top: 70px;
+}
+.info p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.info ul {
+    margin-top: 20px;
+}
+.info ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-color-dark-gray);
+}
+.info ul li a {
+    color: var(--text-color-lightest);
+}
+.icp {
+
+}
+.icp p {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.scrollToTop a{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:80px;
+    right:30px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
 }

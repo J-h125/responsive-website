@@ -53,7 +53,25 @@ header nav a{
 header .burger{
     display: none;
 }
-
+header.sticky {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 18px rgba(0,0,0,0.2);
+    animation:dropDown 0.4s ease-in-out forwards;
+}
+header.sticky nav a,
+header.sticky nav i,
+header.sticky .logo {
+    color:var(--text-color-darker)
+}
+@keyframes dropDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 .glide{
     position: relative;
     top:-80px;
@@ -453,6 +471,11 @@ footer {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
+.scrollToTop {
+    display: none;
+    position: relative;
+    z-index: 200;
 }
 .scrollToTop a{
     height: 30px;

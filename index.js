@@ -99,3 +99,17 @@ const scroll = new SmoothScroll('nav a[href*="#"], .scrollToTop a[href*="#"]',{
     header:"header",
     offset:80
 })
+
+const exploreBtns = document.querySelectorAll('.explore-btn')
+exploreBtns.forEach(exploreBtn => {
+    exploreBtn.addEventListener('click',()=>{
+        scroll.animateScroll(document.querySelector('#about-us'))
+    })
+})
+
+const burger = document.querySelector(".burger")
+
+burger.addEventListener('click',()=>{
+    const header = document.querySelector('header')
+    header.classList.toggle('open')
+})   

@@ -99,6 +99,12 @@ const scroll = new SmoothScroll('nav a[href*="#"], .scrollToTop a[href*="#"]',{
     header:"header",
     offset:80
 })
+//滚动 关闭导航
+document.addEventListener('scrollStart',()=>{
+    if(headerEl.classList.contains('open')){
+        headerEl.classList.remove("open")
+    }
+})
 
 const exploreBtns = document.querySelectorAll('.explore-btn')
 exploreBtns.forEach(exploreBtn => {
@@ -107,9 +113,12 @@ exploreBtns.forEach(exploreBtn => {
     })
 })
 
+//折叠导航 
 const burger = document.querySelector(".burger")
 
 burger.addEventListener('click',()=>{
     const header = document.querySelector('header')
     header.classList.toggle('open')
 })   
+
+
